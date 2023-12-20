@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css?v=1">`
+<title>Carbon Emissions</title>
+<link rel="stylesheet" href="./style.css">
+<style>
+/* Add CSS styles for the image container */
+.content {
+  display: flex; /* Turn it into a flex container */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  border: 2px solid black; /* Add a black border */
+  padding: 5px; /* Adjust padding as needed */
+  border-radius: 5px; /* Add rounded corners to the container */
+  background-color: #f1e5cc; /* Slightly darker background for emphasis */
+  max-width: 70%; /* Adjust the maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally on the page */
+}
+
+/* Add CSS styles to round the corners of the image */
+.content img {
+  max-width: 100%; /* Adjust the maximum width of the image */
+  height: auto; /* Maintain the aspect ratio of the image */
+  border-radius: 5px; /* Add rounded corners to the image */
+}
+
+/* Add CSS styles for the carbon box */
+.carbon-box {
+  text-align: center; /* Center text within the box */
+  background-color: #a39161; /* Background color for the carbon box */
+  color: white; /* Text color for the carbon box */
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 5px; /* Add rounded corners to the carbon box */
+  font-weight: bold; /* Make the text bold */
+  margin-bottom: 20px; /* Add space below the carbon box */
+}
+
+.trending {
+  text-align: center; /* Center text within the trending box */
+  margin-top: 20px; /* Add space above the trending box */
+  padding: 20px;
+  background-color: #f1e5cc; /* Light earth tone */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Enhanced box shadow for depth */
+  border-radius: 8px;
+  color: #333; /* Text color for the trending box */
+}
+
+</style>
+<script src = "./Home.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="main-container">
+    <div class="menu-container">
+      <ul class="menu">
+        <!-- Link to the About page -->
+        <div class="sidebar">
+          <li class="menu-item"><a href="./home.html">Home</a></li>
+          <li class="menu-item"><a href="./about.html">About</a></li>
+          <li class="menu-item"><a href="./help.html">How To Help</a></li>
+          <li class="menu-item search">
+            <input type="text" id="search" name="search" placeholder="Enter .edu Website...">
+            <input type="submit" value="Submit" onclick="searchUniversity(); return false;"/>
+          </li>
+        </ul>
+        
+    </div>
+    <div class="carbon-container">
+      <div class="carbon-box">UNIVERSITY OF CARBON EMISSIONS</div>
+      <div class="content" id = "content">
+        <img src="https://images.ctfassets.net/xrhc6s36njjr/5C3H2xFmDFBohNsoKtsSsl/5402f4bf59cb90238ca84b5a97736206/maryland-resized.jpg?w=1200&h=600&fl=progressive&q=50&fm=jpg" alt="Carbon Emissions Image">
+      </div>
+      <div class="trending bold-text">
+        Daily Solar Radiation Readings for 2023 (Hong Kong Observatory):
+      </div>
+      <canvas id="myChart"></canvas>
+    </div>
+  </div>
