@@ -7,12 +7,12 @@ Target browsers for our website are Mozilla Firefox, Google Chrome, and Microsof
 # User Manual
 1. Download a zip file of our project from GitHub
 2. Open 'index.js'
-3. Open a terminal window to run our application using the following commands:
-&nbsp;&nbsp;&nbsp;&nbsp;a. npm init (enter through all commands)
-&nbsp;&nbsp;&nbsp;&nbsp;b. npm install express
-&nbsp;&nbsp;&nbsp;&nbsp;c. npm install nodemon
-&nbsp;&nbsp;&nbsp;&nbsp;c. npm install papaparse
-&nbsp;&nbsp;&nbsp;&nbsp;d. npm start
+3. Open a terminal window to run our application using the following commands:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;a. npm init (enter through all commands)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;b. npm install express<br />
+&nbsp;&nbsp;&nbsp;&nbsp;c. npm install nodemon<br />
+&nbsp;&nbsp;&nbsp;&nbsp;c. npm install papaparse<br />
+&nbsp;&nbsp;&nbsp;&nbsp;d. npm start<br />
 5. Once started, go into your browser and type http://localhost:4000/home.html
 6. You should see the home page.
 *Additionally, you may access the app by using https://inst-377-project.vercel.app/*
