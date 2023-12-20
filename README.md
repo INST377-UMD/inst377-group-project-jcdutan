@@ -13,7 +13,7 @@ Target browsers for our website are Mozilla Firefox, Google Chrome, and Microsof
 &nbsp;&nbsp;&nbsp;&nbsp;c. npm install nodemon<br />
 &nbsp;&nbsp;&nbsp;&nbsp;c. npm install papaparse<br />
 &nbsp;&nbsp;&nbsp;&nbsp;d. npm start<br />
-5. Once started, go into your browser and type http://localhost:4000/home.html
+5. Once started, go into your browser and type http://localhost:4000/index.html
 6. You should see the home page.
 *Additionally, you may access the app by using https://inst-377-project.vercel.app/*
 # Developer Manual
