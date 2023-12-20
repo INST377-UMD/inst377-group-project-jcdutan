@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+<link rel="stylesheet" href="./style.css">
+<script src = "./About.js"></script>
+</head>
+<body class="about-page">
+  <!-- Start of Sidebar -->
+  <div class="sidebar">
+    <ul class="menu">
+      <li class="menu-item"><a href="./home.html">Home</a></li>
+      <li class="menu-item"><a href="./about.html">About</a></li>
+      <li class="menu-item"><a href="./help.html">How To Help</a></li>
+    </ul>
+  </div>
+
+  <!-- Start of Main Content -->
+  <div class="content">
+    <!-- Centered title "What Are We?" with a custom class -->
+    <div class="centered-title about-title">
+      <h2>What Are We About?</h2>
+    </div>
+    <!-- Centered content "Insert content about us here" with a box border -->
+    <div class="content-about-us">
+      <p>In an era where climate change poses a critical challenge to our planet, 
+        our initiative is dedicated to addressing one of its primary causes: carbon emissions. 
+        We understand that the path to a sustainable future is paved with informed choices, innovative 
+        thinking, and collective action.</p>
+    </div>
+    <div class="column">
+      <h2><strong>Creators/Founders</strong></h2>
+      <p>Xavier Luck</p>
+      <p>Shahrukh Gizabi</p>
+      <p>John Dutan</p>
+    </div>
+    <div class="column">
+      <h2>FAQs</h2>
+      <p><strong>Why did we choose this cause?</strong></p>
+      <p>We chose this cause to advance people's knowledge about carbon emissions as a whole, in particular, to provide an easy search tool about university websites' carbon emissions.</p>
+      <p><strong>Why is this important?</strong></p>
+      <p>This website is important because it is the first step to recognizing how important internet usage is against the fight for climate change.</p>
+      <p><strong>Will Carbon Emissions Improve?</strong></p>
+      <p>We sure hope so! More users learning about carbon emissions will increase awareness about the university website's usage!</p>
+      <p><strong>What Can We Do To Help?</strong></p>
+      <p>Enlist your name in our contact us sheet and automatically become our partner in the fight against high carbon emissions!</p>
+    </div>
+      <h2>Subscribe To Our Newsletter</h2>
+      <!-- Subscription form -->
+      <form onsubmit='addCustomer()' action="./thank-you.html" method="get">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required>
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required>
+        <br>
+        <label for="state">State:</label>
+        <input type="text" id="state" maxlength="2" required>
+        <br>
+        <button type="submit">Subscribe</button>
+      </form>
+      
+      <div class="contact-info">
+        <p>Contact Info:</p>
+        <p>301-405-100</p>
+        <p>College Park, MD</p>
+    </div>
+    </div>
+  </div>
+  <!-- End of Main Content -->
+</body>
+</html>

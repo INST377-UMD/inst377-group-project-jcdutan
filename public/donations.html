@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="help-page">
+  <div class="sidebar">
+    <ul class="menu">
+      <li class="menu-item"><a href="./home.html">Home</a></li>
+      <li class="menu-item"><a href="./about.html">About</a></li>
+      <li class="menu-item"><a href="./help.html">How To Help</a></li>
+    </ul>
+  </div>
+
+  <!-- Main content area -->
+  <div class="content">
+    <div class="centered-title help-title">
+      <h2>Make a Donation</h2>
+    </div>
+
+    <!-- Donation form -->
+    <form id="donation-form" onsubmit="submitDonation(event);">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="amount">Amount to Donate:</label>
+        <input type="number" id="amount" name="amount" min="1" step="1" required>
+      </div>
+
+      <button type="submit">Donate</button>
+    </form>
+
+    <!-- Thank you message (initially hidden) -->
+    <div id="thank-you-message" style="display: none;">
+      <p>Thanks for Donating!</p>
+    </div>
+
+    <a href="./help.html" class="back-button">Back to How To Help</a>
+    
+  <script>
+    function submitDonation(event) {
+      event.preventDefault();
+      // Simulate form submission (replace this with your actual donation processing logic)
+      setTimeout(function() {
+        document.getElementById('thank-you-message').style.display = 'block';
+      }, 1000); // Display thank you message for 1 second
+    }
+
+    function goToSupportPage() {
+      window.location.href = './help.html';
+    }
+  </script>
+</body>
+</html>
